@@ -5,4 +5,8 @@ package com.navjacinthmathew.mvpdemo.view.interfaces;
  */
 
 public interface IEmployeeList {
+
+    void showEmployeeList();
+
+    void hideEmployeeList();
 }

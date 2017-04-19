@@ -1,26 +1,45 @@
 package com.navjacinthmathew.mvpdemo.view.fragment;
 
-
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.navjacinthmathew.mvpdemo.R;
+import com.navjacinthmathew.mvpdemo.view.interfaces.IEmployeeList;
 
-public class EmployeeListFragment extends Fragment {
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
+public class EmployeeListFragment extends Fragment implements IEmployeeList {
 
-    public EmployeeListFragment() {}
+    @BindView(R.id.txt_no_data)
+    TextView txtNoDataMessage;
+    @BindView(R.id.recycler_employee_list)
+    RecyclerView recyclerViewEmployeeList;
 
+    public EmployeeListFragment() {
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_employee_list, container, false);
+        ButterKnife.bind(this, view);
         return view;
     }
 
+    @Override
+    public void showEmployeeList() {
+
+    }
+
+    @Override
+    public void hideEmployeeList() {
+
+    }
 }
