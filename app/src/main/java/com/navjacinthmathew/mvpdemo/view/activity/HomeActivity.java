@@ -5,7 +5,7 @@ import android.os.Bundle;
 
 import com.navjacinthmathew.mvpdemo.R;
 
-public class MainActivity extends AppCompatActivity {
+public class HomeActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
