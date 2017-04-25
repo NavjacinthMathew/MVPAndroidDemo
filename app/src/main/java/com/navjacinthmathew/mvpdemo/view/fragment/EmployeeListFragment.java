@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.navjacinthmathew.mvpdemo.R;
+import com.navjacinthmathew.mvpdemo.presenter.EmployeeListPresenter;
 import com.navjacinthmathew.mvpdemo.view.interfaces.IEmployeeList;
 
 import butterknife.BindView;
@@ -21,6 +22,8 @@ public class EmployeeListFragment extends Fragment implements IEmployeeList {
     @BindView(R.id.recycler_employee_list)
     RecyclerView recyclerViewEmployeeList;
 
+    private EmployeeListPresenter presenter;
+
     public EmployeeListFragment() {
     }
 
@@ -30,6 +33,8 @@ public class EmployeeListFragment extends Fragment implements IEmployeeList {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_employee_list, container, false);
         ButterKnife.bind(this, view);
+        presenter = new EmployeeListPresenter(this);
+        presenter.getEmployeeData();
         return view;
     }
 
