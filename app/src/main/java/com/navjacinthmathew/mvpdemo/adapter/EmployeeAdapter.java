@@ -32,9 +32,8 @@ public class EmployeeAdapter extends RecyclerView.Adapter<EmployeeAdapter.Employ
 
     @Override
     public void onBindViewHolder(EmployeeViewHolder holder, int position) {
-        holder.txtEmpName.setText(dataList.get(position).getId());
-        holder.txtEmpEmail.setText(dataList.get(position).getName());
-        holder.txtEmpPhone.setText(dataList.get(position).getEmailId());
+        holder.txtEmpName.setText(dataList.get(position).getName());
+        holder.txtEmpEmail.setText(dataList.get(position).getEmailId());
     }
 
     @Override
@@ -44,13 +43,12 @@ public class EmployeeAdapter extends RecyclerView.Adapter<EmployeeAdapter.Employ
 
     class EmployeeViewHolder extends RecyclerView.ViewHolder {
 
-        TextView txtEmpName, txtEmpEmail, txtEmpPhone;
+        TextView txtEmpName, txtEmpEmail;
 
         EmployeeViewHolder(View itemView) {
             super(itemView);
-            txtEmpName = (TextView) itemView.findViewById(R.id.txt_emp_id);
-            txtEmpEmail = (TextView) itemView.findViewById(R.id.txt_emp_name);
-            txtEmpPhone = (TextView) itemView.findViewById(R.id.txt_name_email);
+            txtEmpEmail = (TextView) itemView.findViewById(R.id.txt_name_email);
+            txtEmpName = (TextView) itemView.findViewById(R.id.txt_emp_name);
         }
     }
 }
