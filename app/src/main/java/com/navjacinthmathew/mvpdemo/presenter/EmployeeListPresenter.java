@@ -22,11 +22,11 @@ public class EmployeeListPresenter {
     public void getEmployeeData() {
         ArrayList<EmployeeModel> empDataList = new ArrayList<>();
         empDataList.add(new EmployeeModel(123, "Employee1", "emp1@mvpexample.com"));
-        empDataList.add(new EmployeeModel(321, "Employee2", "emp1@mvpexample.com"));
-        empDataList.add(new EmployeeModel(456, "Employee3", "emp1@mvpexample.com"));
-        empDataList.add(new EmployeeModel(654, "Employee4", "emp1@mvpexample.com"));
-        empDataList.add(new EmployeeModel(789, "Employee5", "emp1@mvpexample.com"));
-        empDataList.add(new EmployeeModel(987, "Employee6", "emp1@mvpexample.com"));
+        empDataList.add(new EmployeeModel(321, "Employee2", "emp2@mvpexample.com"));
+        empDataList.add(new EmployeeModel(456, "Employee3", "emp3@mvpexample.com"));
+        empDataList.add(new EmployeeModel(654, "Employee4", "emp4@mvpexample.com"));
+        empDataList.add(new EmployeeModel(789, "Employee5", "emp5@mvpexample.com"));
+        empDataList.add(new EmployeeModel(987, "Employee6", "emp6@mvpexample.com"));
 
         setList(empDataList);
     }
