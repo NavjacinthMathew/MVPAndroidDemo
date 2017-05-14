@@ -21,16 +21,16 @@
             android:id="@+id/rela_round"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="0"
             android:layout_marginRight="@dimen/text_margin"
+            android:layout_weight="0"
             android:background="@drawable/circle"
             android:backgroundTint="@color/colorPrimary"
             android:transitionName="shareView" />
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:orientation="vertical">
 
             <TextView
@@ -40,17 +40,16 @@
                 android:layout_marginTop="@dimen/text_margin_very_small"
                 android:textColor="@color/black"
                 android:textSize="14sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/txt_name_email"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/text_margin_very_small"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black" />
 
         </LinearLayout>
-
 
     </LinearLayout>
 
